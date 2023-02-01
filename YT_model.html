@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YT_model</title>
+    <style>
+        .body{
+            padding-top: 70px;
+            padding-left: 90px;
+            margin-top: 0;
+            margin-left: 0;
+            margin-right: 0;
+        }
+        .content{
+            background-color:aqua;  
+            grid-template-columns:1fr 1fr 1fr;
+            position: relative;
+            height:200px;
+            border-radius: 10px;
+            margin: 20px 20px 60px 20px;
+        }
+        .time{
+            position: absolute;
+            margin:10px;
+            padding:2px;
+            padding-right: 3px;
+            bottom: 0;
+            right: 0;
+            background-color: black;
+            color: aliceblue;
+            border-radius: 5px;
+        }
+        .side-bottom{
+            position: fixed;
+            background-color: dimgrey;
+            color: white;
+            z-index: 50;
+            top:70px;
+            left: 0;
+            bottom:0;
+            width:90px;
+        }
+        .middle{
+            background-color:lightgreen;
+            flex: 1;
+            margin-left: 50px;
+            margin-right: 50px;
+        }
+        .grid-column{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        @media (max-width:1000px) {
+            .grid-column{
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
+        @media (min-width :500px) and (max-width:700px) {
+            .grid-column{
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width:500px) {
+            .grid-column{
+                grid-template-columns: 1fr;
+            }
+            .side-bottom{
+                width:60px;
+            }
+            .middle{
+                margin-left:2px;
+                margin-right: 2px;
+            }
+            .body{
+                padding-left: 60px;
+            }
+        }
+    </style>
+</head>
+<body class="body">
+    <div style="background-color:rgb(255, 255, 255);
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    z-index: 100;">
+        <div style="display: flex;
+        height:70px">
+            <div style="background-color: lightblue;
+            width:150px;">
+                leftside
+            </div>
+            <div class="middle">
+                middle
+            </div>
+            <div style="background-color: lightblue;
+            width:150px;">
+                rightside
+            </div>
+        </div>
+    </div>
+    <div class="side-bottom">
+        sidebar
+    </div>
+    <div class="grid-column">
+        <div class="content">
+            content1 
+            <div class="time">
+                14:00
+            </div>
+        </div>
+        <div class="content">
+            content2
+            <div class="time">
+                15:00
+            </div>
+        </div>
+        <div class="content">
+            content3
+            <div class="time">
+                15:00
+            </div>
+        </div>
+        <div class="content">
+            content4
+            <div class="time">
+                16:00
+            </div>
+        </div>
+        <div class="content">
+            content5
+            <div class="time">
+                17:00
+            </div>
+        </div>
+        <div class="content">
+            content6
+            <div class="time">
+                18:00
+            </div>
+        </div>
+        <div class="content">
+            content7
+            <div class="time">
+                19:00
+            </div>
+        </div>
+        <div class="content">
+            content8
+            <div class="time">
+                20:00
+            </div>
+        </div>
+        <div class="content">
+            content1 
+            <div class="time">
+                14:00
+            </div>
+        </div>
+        <div class="content">
+            content2
+            <div class="time">
+                15:00
+            </div>
+        </div>
+        <div class="content">
+            content3
+            <div class="time">
+                15:00
+            </div>
+        </div>
+        <div class="content">
+            content4
+            <div class="time">
+                16:00
+            </div>
+        </div>
+        <div class="content">
+            content5
+            <div class="time">
+                17:00
+            </div>
+        </div>
+        <div class="content">
+            content6
+            <div class="time">
+                18:00
+            </div>
+        </div>
+        <div class="content">
+            content7
+            <div class="time">
+                19:00
+            </div>
+        </div>
+        <div class="content">
+            content8
+            <div class="time">
+                20:00
+            </div>
+        </div>
+        <div class="content">
+            content1 
+            <div class="time">
+                14:00
+            </div>
+        </div>
+        <div class="content">
+            content2
+            <div class="time">
+                15:00
+            </div>
+        </div>
+        <div class="content">
+            content3
+            <div class="time">
+                15:00
+            </div>
+        </div>
+        <div class="content">
+            content4
+            <div class="time">
+                16:00
+            </div>
+        </div>
+        <div class="content">
+            content5
+            <div class="time">
+                17:00
+            </div>
+        </div>
+        <div class="content">
+            content6
+            <div class="time">
+                18:00
+            </div>
+        </div>
+        <div class="content">
+            content7
+            <div class="time">
+                19:00
+            </div>
+        </div>
+        <div class="content">
+            content8
+            <div class="time">
+                20:00
+            </div>
+        </div>
+        <div class="content">
+            content1 
+            <div class="time">
+                14:00
+            </div>
+        </div>
+        <div class="content">
+            content2
+            <div class="time">
+                15:00
+            </div>
+        </div>
+        <div class="content">
+            content3
+            <div class="time">
+                15:00
+            </div>
+        </div>
+        <div class="content">
+            content4
+            <div class="time">
+                16:00
+            </div>
+        </div>
+        <div class="content">
+            content5
+            <div class="time">
+                17:00
+            </div>
+        </div>
+        <div class="content">
+            content6
+            <div class="time">
+                18:00
+            </div>
+        </div>
+        <div class="content">
+            content7
+            <div class="time">
+                19:00
+            </div>
+        </div>
+        <div class="content">
+            content8
+            <div class="time">
+                20:00
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+</html>
