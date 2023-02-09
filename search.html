@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>search</title>
+    <link rel="stylesheet" href="./videos.css">
+    <style>
+        .fail-pic{
+            width: 300px;
+        }
+        @media (max-width:500px) {
+            .fail-pic{
+                z-index: 100;
+                width:200px;
+                margin-right:55px;
+                padding:0px;
+            }
+            .search-page{
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+    </style>
+</head>
+<body class="search-page"style="background-color: rgb(15,15,15);
+padding-left: 60px;padding-top: 100px ;">
+<div class="header">
+    <div class="header-left">
+        <img class="header-menu" src="./images/menubar.png">
+        <img class="header-logo" src="./images/logo.png">
+    </div>
+    <div class="header-middle">
+        <form class="middle-search" action="./search.html">
+            <input class="search-bar" type="text" placeholder="Search">
+            <button class="search-form" type="submit" ><img class="search-button" src="./images/search3.ico"></button>
+            <img class="microphone" src="./images/microphone.png">
+        </form>
+    </div>
+    <div class="header-right">
+        <div class="create-div">
+            <img class="create" src="./images/add.png">
+        </div>
+        <div class="bell-div">
+            <img class="bell" src="./images/bel.png">
+        </div>
+        <div class="user-div">
+            <img class="user" src="./images/user.png">
+
+        </div>
+    </div>
+</div>
+<div class="side-bar">
+    <div class="home-button">
+        <button style="background-color: black;
+        border: 0px;"><a href="./youtube.html"><img class="home" src="./images/home.png"></a></button>
+    </div>
+    <div class="shorts-button">
+        <button style="background-color: black;
+         border: 0px;"><a href="https://www.youtube.com/shorts/jugr6yhQJ_c"><img class="shorts" src="./images/shorts2.png"></button></a>
+    </div>
+    <div class="trending-button">
+        <button style="background-color: black;
+         border: 0px;"><img class="trending" src="./images/compass-xxl.png"></button>
+    </div>
+    <div class="watchlater-button">
+        <button style="background-color: black;
+         border: 0px;"><img class="watchlater" src="./images/h1.png" ></button>
+    </div>
+    <div class="history-button">
+        <button style="background-color: black;
+         border: 0px;"><img class="history" src="./images/h2.png"></button>
+    </div>
+</div>
+<div class="bottom-bar">
+    <div class="home2-button">
+        <button class="home2-button2"><a href="./youtube.html"><img class="home2" src="./images/home.png"></a></button>
+    </div>
+    <div class="shorts2-button">
+        <button style="background-color: black;border:0px"><a href="https://youtube.com/shorts/jugr6yhQJ_c?feature=share"><img class="shorts2" src="./images/shorts2.png"></a></button>
+    </div>       
+    <div class="add2-button">
+        <img class="add2" src="./images/add.png">
+    </div>
+    <div class="trending2-button">
+        <img class="trending2" src="./images/compass-xxl.png">
+    </div>
+
+    <div class="history2-button">
+        <img class="history2" src="./images/h2.png">
+    </div>
+</div>
+
+    <div class="fail" style="display: flex;justify-content: center;z-index: 10;">
+        <img class="fail-pic" src="./images/noresult.png">
+    </div>
+</body>
+</html>
