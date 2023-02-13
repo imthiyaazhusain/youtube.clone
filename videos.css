@@ -1,103 +1,111 @@
 .body{
     background-color:rgb(15,15,15);
-    padding-left: 100px;
-    padding-top: 80px;
+    padding-left: 200px;
+    padding-top: 50px;
     padding-bottom: 55px;
+    user-select: none;
 }
 
 
 .header{
     z-index: 100;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(15, 15, 15);
     display: flex;
+    flex:1;
     justify-content: space-between;
     position: fixed;
     top:0;
     left:0;
     right:0;
-    height:70px;
-    box-shadow: 0px 0px 1px 1px rgb(30,30,30);
+    height:55px;
     
 }
 .header-left{
     display: flex;
     width:230px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(15, 15, 15);
 }
 .header-menu{
-    width:25px;
-    height:15px;
-    margin:25px 15px 25px 35px;
+    padding: 6px;
+    width:24px;
+    height:22px;
+    margin:11px 8px 25px 18px;
     cursor: pointer;
+    border-radius: 20px;
+}
+.header-menu:hover{
+    background-color: rgb(50,50,50);
 }
 .header-logo{
     width:130px;
     height: 30px;
-    margin-top: 15px;
-    margin-left: 10px;
+    margin-top: 10px;
+    margin-left: 2px;
     cursor: pointer;
 }
 
 .header-middle{
     flex:1;
-    max-width:600px;
-    background-color: rgb(0, 0, 0);
+    max-width:700px;
+    background-color: rgb(15, 15, 15);
 }
 .header-right{
     display: flex;
     width:200px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(15, 15, 15);
 }
 .create{
     width:24px;
     padding: 8px;
-    margin-top: 16px;
+    margin-top: 10px;
     margin-bottom: 13px;
     margin-left: 30px;
-    background-color: rgb(20, 20, 20);
     border-radius: 24px;
 
 }
 .create:hover{
     cursor: pointer;
+    background-color: rgb(35,35,35);
 }
 .bell{
     width:24px;
     padding: 8px;
-    margin-top: 16px;
+    margin-top: 10px;
     margin-bottom: 13px;
     margin-left: 5px;
-    background-color: rgb(20, 20, 20);
+    background-color: rgb(15, 15, 15);
     border-radius: 24px;
 }
 .bell:hover{
     cursor: pointer;
+    background-color: rgb(35,35,35);
 }
 .user{
     width:24px;
     padding: 8px;
-    margin-top: 16px;
+    margin-top: 10px;
     margin-bottom: 13px;
     margin-left: 5px;
-    background-color: rgb(20, 20, 20);
     border-radius: 24px;
 
 }
 .user:hover{
     cursor: pointer;
+    background-color: rgb(35,35,35);
 }
 .middle-search{
     flex: 1;
     display: flex;
-    margin-left: 20px;
+    margin-left: 50px;
     margin-right: 20px;
     justify-content: space-between;
 }
 .search-button{
     position: relative;
-    width: 20px;
+    width: 19px;
+    margin-bottom: 0px;
     padding: 10px 20px 10px 20px;
-    margin-top: 16px;
+    margin-top: 8px;
     margin-left:1px;
     border: 1px;
     cursor: pointer;
@@ -108,137 +116,191 @@
     background-color: rgb(35,35,35);
 }
 .search-form{
-    background-color: black;
+    background-color: rgb(15,15,15);
     padding: 0px;
     border: 0px;
 }
 .search-bar{
     opacity: 1;
-    z-index: 50;
+    z-index: 100;
     color: rgb(255, 255, 255);
-    padding-left: 25px;
-    background-color: rgb(10,10,10);
+    padding: 0px 0px 0px 25px;
+    background-color: rgb(15,15,15);
     flex: 1;
-    margin-right: -3px;
-    border: 1px;
+    margin-right: -5px;
+    border:0px;
     border-style: solid;
-    border-color: rgba(255,255,255,0.20);
-    height:38px;
+    height:41px;
     border-radius: 20px 0px 0px 20px;
-    margin-top: 16px;
+    margin-top: 8px;
+    box-shadow: inset 0px 0px 1px 1px rgba(255,255,255,0.20);
+    
 }
 .search-bar:focus{
     outline-style:solid;
-    outline-width: 1px;
+    outline-width: 0px;
     outline-color: rgb(0, 162, 255);
+    box-shadow: inset 0px 0px 1px 1px rgb(0, 162, 255);
 }
 .microphone{
     width:25px;
     height: 25px;
-    margin-top: 17px;
+    margin-top: 10px;
     margin-left: 10px;
     padding: 6px 6px 6px 6px;
     border:0px;
-    border-color: rgb(255, 255, 255);
     border-style: solid;
     border-radius: 20px;
-    background-color: rgb(20,20,20);
-    box-shadow: inset 0px 0px 1px 1px rgb(40, 40, 40);
+    background-color: rgb(30,30,30);
 }
-.microphone:hover{
+.mirophone:hover{
     cursor: pointer;
+}
+.horizontal-scroll{
+    padding-top: 10px;
+    margin-left: 210px;
+    background-color: rgb(15,15,15);
+    position: fixed;
+    top:55px;
+    left:0;
+    right:0;
+    overflow:scroll;
+    white-space:nowrap;
+    cursor:cell
+}
+.horizontal-scroll p{
+    margin: 3px 5px 0px 5px;
+    border-radius: 10px;
+    background-color: rgb(35,35,35);
+    display: inline-block;
+    color: white;
+    font-weight:500;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 8px 13px 8px 13px;
+    cursor: pointer;
+    transition:background-color 0.25s, color 0.25s;
+    
+    
+}
+.horizontal-scroll p:active{
+    background-color:white ;
+    color:gray
 }
 .side-bar{
     z-index: 80;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(15,15,15);
     position: fixed;
     top:60px;
     left:0;
     bottom: 0;
-    width: 99px;
-    box-shadow: 0px 0px 1px 1px rgb(30,30,30);
-}
-.home-button{
-    position: relative;
+    width: 200px;
 }
 .home{
-    width:30px;
-    padding: 15px;
-    margin-top: 25px;
-    margin-left: 11px;
+    width:45px;
+    padding: 0px 10px 0px 8px;
+}
+.home-button{
+    margin-left: 8px;
+    align-items: center;
+    padding: 0px;
+    background-color:rgb(15,15,15);
+    margin-top: 10px;
     border-radius: 10px;
-}
-.home:hover{
-    background-color: rgb(40, 40, 40);
     cursor: pointer;
+    transition: background-color 0.25s;
 }
-.home:active{
-    background-color: rgb(80,80,80);
+.home-button:hover{
+    background-color: rgb(35,35,35);
 }
-.shorts-button{
-    position: relative;
+.home-button:active{
+    background-color: rgb(70,70,70);
 }
 .shorts{
-    width:30px;
-    padding: 12px 15px 12px 15px;
-    margin-top: 5px;
-    margin-left: 11px;
+    width: 48px;
+    padding: 0px 4px 0px 6px;
+}
+.shorts-button{
+    margin-left: 8px;
+    align-items: center;
+    padding: 0px;
+    background-color:rgb(15,15,15);
+    margin-top: 1px;
     border-radius: 10px;
-}
-.shorts:hover{
-    background-color: rgb(40, 40, 40);
     cursor: pointer;
+    transition: background-color 0.25s;
 }
-.shorts:active{
-    background-color: rgb(80,80,80);
+.shorts-button:hover{
+    background-color: rgb(35,35,35);
 }
-.trending-button{
-    position: relative;
+.shorts-button:active{
+    background-color: rgb(70,70,70);
 }
-.trending{
-    width:30px;
-    padding: 15px;
-    margin-top: 5px;
-    margin-left: 11px;
+.history1{
+    width:25px;
+    padding: 8px;
+    background-color: rgb(115,115,115);
+    border-radius: 25px;
+}
+.history1-button{
+    margin-left: 8px;
+    align-items: center;
+    padding-left: 8px;
+    background-color:rgb(15,15,15);
+    margin-top: 1px;
     border-radius: 10px;
-}
-.trending:hover{
-    background-color: rgb(40, 40, 40);
     cursor: pointer;
+    transition: background-color 0.25s;
 }
-.trending:active{
-    background-color: rgb(80,80,80);
+.history1-button:hover{
+    background-color: rgb(35,35,35);
 }
-.watchlater-button{
-    position: relative;
+.history1-button:active{
+    background-color: rgb(70,70,70);
 }
-.watchlater{
-    width:30px;
-    padding: 15px;
-    margin-top: 5px;
-    margin-left: 11px;
+.subscriptions{
+    width: 45px;
+}
+.subscriptions-button{
+    margin-top: 1px;
+    margin-left: 9px;
+    background-color: rgb(15,15,15);
     border-radius: 10px;
-}
-.watchlater:hover{
-    background-color: rgb(40, 40, 40);
     cursor: pointer;
+    transition: background-color 0.25s;
 }
-.watchlater:active{
-    background-color: rgb(80,80,80);
+.subscriptions-button:hover{
+    background-color: rgb(35,35,35);
 }
-.history{
-    width:32px;
-    padding: 15px;
-    margin-top: 5px;
-    margin-left: 10px;
+.subscriptions-button:active{
+    background-color: rgb(70,70,70);
+}
+.history1{
+    width:25px;
+    padding: 8px;
+    background-color: rgb(115,115,115);
+    border-radius: 25px;
+}
+.music{
+    width:15px;
+    padding-left: 15px;
+}
+.music-button{
+    margin-left: 8px;
+    align-items: center;
+    padding-left: 8px;
+    background-color:rgb(15,15,15);
+    margin-top: 1px;
     border-radius: 10px;
-}
-.history:hover{
-    background-color: rgb(40, 40, 40);
     cursor: pointer;
+    transition: background-color 0.25s;
 }
-.history:active{
-    background-color: rgb(80,80,80);
+.music-button:hover{
+    background-color: rgb(35,35,35);
+}
+.music-button:active{
+    background-color: rgb(70,70,70);
 }
 .bottom-bar{
     background-color: rgb(0, 0, 0);
@@ -249,8 +311,13 @@
     right: 0;
     opacity: 0;
 }
+.live{
+    width:25px;
+    padding-left: 10px;
+}
 
 .videos-container{
+    margin-top: 50px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr ;
     column-gap: 15px;
@@ -502,6 +569,12 @@
     margin:0px;
 }
 
-::-webkit-scrollbar{
+.horizontal-scroll::-webkit-scrollbar{
     width: 0px;
+    height: 12px;
+    background-color: rgb(15, 15, 15);
+}
+.body::-webkit-scrollbar{
+    width: 20px;
+    background-color: rgb(15, 15, 15);
 }
