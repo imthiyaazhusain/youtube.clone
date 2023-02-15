@@ -4,9 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library</title>
+    <title>search</title>
     <link rel="stylesheet" href="./videos.css">
+    <style>
+        .fail-pic{
+            margin-top: 50px;
+            width: 300px;
+        }
+        @media (max-width:500px) {
+            .fail-pic{
+                z-index: 100;
+                width:200px;
+                margin-right:55px;
+                padding:0px;
+            }
+            .search-page{
+                padding: 0px;
+                margin: 0px;
+            }
+        }
+    </style>
 </head>
+<body class="search-page"style="background-color: rgb(15,15,15);
+padding-left: 60px;padding-top: 100px ;">
 <body class="body">
     <div class="header">
         <div class="header-left">
@@ -28,12 +48,13 @@
                 <img class="bell" src="./images/bel.png">
             </div>
             <div class="user-div">
-                <a href="https://accounts.google.com/v3/signin/identifier?dsh=S-1408672121%3A1676195575010219&continue=https%3A%2F%2Fwww.youtube.com%2Fsignin%3Faction_handle_signin%3Dtrue%26app%3Ddesktop%26hl%3Den%26next%3Dhttps%253A%252F%252Fwww.youtube.com%252F%253FthemeRefresh%253D1&ec=65620&hl=en&passive=true&service=youtube&uilel=3&flowName=GlifWebSignIn&flowEntry=ServiceLogin&ifkv=AWnogHfZCt12BKVBKshRuGU2xru2yjjtFd_Gkjisc10nUVBQCSLGQ_RyW8oV_MV5TaiujtPct3Cc
-                "><img class="user" src="./images/user.png"></a>
+                <img class="user" src="./images/user.png">
+
             </div>
         </div>
         
     </div>
+    <div class="scroll-border">
         <div class="horizontal-scroll">
             <p style="color:rgb(15,15,15);background-color: aliceblue;">All</p>
             <p>For you</p>
@@ -56,64 +77,65 @@
             <p>Tamil tv drama</p>
             <p>Watched</p>
             <p>Recently uploaded</p>
-        </div>      
-        <div class="side-bar">
-            <div>
-                <a href="./youtube.html" style="text-decoration:none;">
-                <button class="home-button" style="border: 0px;display: flex;"><img class="home" src="./images/home.png">
-                <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 5px;padding-right:75px;">Home</p></button>
-                </a>
-            </div>
-            <div>
-                <a href="https://www.youtube.com/shorts/ZbR2IkWU-fY" style="text-decoration:none;">
-                <button class="shorts-button" style="border: 0px;display: flex;"><img class="shorts" src="./images/shorts.png">
-                <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 10px;padding-right:75px;">Shorts</p></button>
-                </a>
-            </div>
-            <div>
-                <a href="./search.html" style="text-decoration:none;">
-                <button class="subscriptions-button" style="border: 0px;display: flex;"><img class="subscriptions" src="./images/subscriptions.png">
-                <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 13px;padding-right:23px;">Subscriptions</p></button>
-                </a>
-            </div><hr style="width: 185px;height: 1px;border: 0px;box-shadow: 0px 1px 1px white; ">
-            <div>
-                <a href="./library.html" style="text-decoration:none;">
-                <button class="shorts-button" style="border: 0px;display: flex;"><img class="shorts" src="./images/library.png">
-                <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 11px;padding-right:74px;">Library</p></button>
-                </a>
-            </div>
-            <div>
-                <a href="./library.html" style="text-decoration:none;">
-                <button class="history1-button" style="border: 0px;display: flex;"><img class="history1" src="./images/h2.png">
-                <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 20px;padding-right:68px;">History</p></button>
-                </a>
-            </div>
-            <div>
-                <a href="./library.html" style="text-decoration:none;">
-                <button class="history1-button" style="border: 0px;display: flex;"><img class="history1" src="./images/h1.png">
-                <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 20px;padding-right:43px;">Watchlater</p></button>
-                </a>
-            </div>
-            <div>
-                <a href="./library.html" style="text-decoration:none;">
-                <button class="shorts-button" style="border: 0px;display: flex;"><img class="shorts" src="./images/trending.png">
-                <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 10px;padding-right:63px;">Trending</p></button>
-                </a>
-            </div><hr class="side-line" style="width: 185px;height: 1px;border: 0px;box-shadow: 0px 1px 1px white; ">
-            <P class="side-p" style="color: white;padding-left: 20px;">Explore</P>
-            <div>
-                <a href="./youtube.html" style="text-decoration:none;">
-                <button class="music-button" style="border: 0px;display: flex;"><img class="music" src="./images/music.png">
-                <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 30px;padding-right:73px;">Music</p></button>
-                </a>
-            </div>
-            <div>
-                <a href="./youtube.html" style="text-decoration:none;">
-                <button class="music-button"style="border: 0px;display: flex;"><img class="live" src="./images/l2.png">
-                <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 27px;padding-right:83px;">Live</p></button>
-                </a>
-            </div>
         </div>
+    </div>        
+    <div class="side-bar">
+        <div>
+            <a href="./youtube.html" style="text-decoration:none;">
+            <button class="home-button" style="border: 0px;display: flex;"><img class="home" src="./images/home.png">
+            <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 5px;padding-right:75px;">Home</p></button>
+            </a>
+        </div>
+        <div>
+            <a href="https://www.youtube.com/shorts/ZbR2IkWU-fY" style="text-decoration:none;">
+            <button class="shorts-button" style="border: 0px;display: flex;"><img class="shorts" src="./images/shorts.png">
+            <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 10px;padding-right:75px;">Shorts</p></button>
+            </a>
+        </div>
+        <div>
+            <a href="./search.html" style="text-decoration:none;">
+            <button class="subscriptions-button" style="border: 0px;display: flex;"><img class="subscriptions" src="./images/subscriptions.png">
+            <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 13px;padding-right:23px;">Subscriptions</p></button>
+            </a>
+        </div><hr style="width: 185px;height: 1px;border: 0px;box-shadow: 0px 1px 1px white; ">
+        <div>
+            <a href="./library.html" style="text-decoration:none;">
+            <button class="shorts-button" style="border: 0px;display: flex;"><img class="shorts" src="./images/library.png">
+            <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 11px;padding-right:74px;">Library</p></button>
+            </a>
+        </div>
+        <div>
+            <a href="./library.html" style="text-decoration:none;">
+            <button class="history1-button" style="border: 0px;display: flex;"><img class="history1" src="./images/h2.png">
+            <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 20px;padding-right:68px;">History</p></button>
+            </a>
+        </div>
+        <div>
+            <a href="./library.html" style="text-decoration:none;">
+            <button class="history1-button" style="border: 0px;display: flex;"><img class="history1" src="./images/h1.png">
+            <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 20px;padding-right:43px;">Watchlater</p></button>
+            </a>
+        </div>
+        <div>
+            <a href="./library.html" style="text-decoration:none;">
+            <button class="shorts-button" style="border: 0px;display: flex;"><img class="shorts" src="./images/trending.png">
+            <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 10px;padding-right:63px;">Trending</p></button>
+            </a>
+        </div><hr class="side-line" style="width: 185px;height: 1px;border: 0px;box-shadow: 0px 1px 1px white; ">
+        <P class="side-p" style="color: white;padding-left: 20px;">Explore</P>
+        <div>
+            <a href="./youtube.html" style="text-decoration:none;">
+            <button class="music-button" style="border: 0px;display: flex;"><img class="music" src="./images/music.png">
+            <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 30px;padding-right:73px;">Music</p></button>
+            </a>
+        </div>
+        <div>
+            <a href="./youtube.html" style="text-decoration:none;">
+            <button class="music-button"style="border: 0px;display: flex;"><img class="live" src="./images/l2.png">
+            <p class="side-p" style="color: rgb(255, 255, 255);padding-left: 27px;padding-right:83px;">Live</p></button>
+            </a>
+        </div>
+    </div>
     <div class="bottom-bar">
         <div class="home2-button">
             <button class="home2-button2"><a href="./youtube.html"><img class="home2" src="./images/home.png"></a></button>
@@ -131,13 +153,8 @@
             <a href="./library.html"><img class="library2" src="./images/library.png"></a>
         </div>
     </div>
-    <div style="display: flex;margin: 50px;">
-        <div style="flex: 50px;"></div>
-    <div>
-        <p style="flex:1;color: white;">No videos</p>
+    <div class="fail" style="display: flex;justify-content: center;z-index: 10;">
+        <img class="fail-pic" src="./images/noresult.png">
     </div>
-        <div style="flex: 50px;"></div>
-    </div>
-    
 </body>
 </html>
