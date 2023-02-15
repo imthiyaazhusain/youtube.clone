@@ -361,7 +361,7 @@
         justify-content: space-between;
     }
     .home2{
-        width:30px;
+        width:38px;
     }
     .home2:hover{
         cursor: pointer;
@@ -369,34 +369,38 @@
     .home2-button2{
         background-color: black;
         border:0px;
-        margin: 7px 0px 0px 15px;
+        margin: 3px 0px 0px 18px;
         padding: 0px;
     }
     .shorts2{
-        width:25px;
-        margin: 7px 0px 0px 0px ;
+        width: 38px;
+        margin: 4px 0px 0px 0px ;
+        background-color: transparent;
+    }
+    .shorts2-button2{
+        padding: 0px;
+        background-color: transparent;
+        border: 0px;
     }
     .shorts2:hover{
         cursor: pointer;
     }
     .add2{
         width:40px;
-    }
-    .add2:hover{
-        cursor: pointer;
+        margin-top: 2px;
     }
     .trending2{
-        width:30px;
-        margin: 7px 0px 0px 0px ;
+        width:38px;
+        margin: 4px 0px 0px 0px ;
     }
     .trending2:hover{
         cursor: pointer;
     }
-    .history2{
-        width:30px;
-        margin: 7px 20px 0px 0px ;
+    .library2{
+        width:38px;
+        margin: 4px 20px 0px 0px ;
     }
-    .history2:hover{
+    .library2:hover{
         cursor: pointer;
     }
 
@@ -427,13 +431,13 @@
         border: 0px;
         height: 24px;
         width:24px;
-        padding: 8px;
-        margin-top: 12px;
+        padding: 10px;
+        margin-top: 11px;
         margin-bottom: 1px;
         margin-left: 1px;
         margin-right: 1 px;
         border-radius: 20px;
-        background-color:rgb(20, 20, 20);
+        background-color:transparent;
         box-shadow: 0px 0px 0px black;
     }
     .microphone{
@@ -467,41 +471,51 @@
     }
     .home{
         width:0px;
-        height: 0px;
-        margin-left: 0px;
-    }
-    .home:hover{
-        background-color: transparent;
     }
     .shorts{
         width:0px;
-        margin: 0px;
     }
-    .shorts:hover{
-        background-color: transparent;
+    .subscriptions{
+        width: 0px;
     }
-    .trending{
+    .history1{
+        width: 0px;
+        padding: 0px;
+    }
+    .music{
+        width: 0px;
+    }
+    .live{
+        width: 0px;
+    }
+    .horizontal-scroll{
+        margin-left: 11px;
+        margin-right: 11px;
+    }
+    .home-button{
+        width: 0px;
+    }
+    .shorts-button{
         width:0px;
-        margin: 0px;
     }
-    .trending:hover{
-        background-color: transparent;
+    .subscriptions-button{
+        width: 0px;
+        padding: 0px;
     }
-    .history{
-        width:0px;
-        margin: 0px;
+    .history1-button{
+        width: 0px;
+        padding: 0px;
     }
-    .history:hover{
-        background-color: transparent;
+    .side-p{
+        font-size: 0px;
     }
-    .watchlater{
-        width:0px;
-        margin: 0px;
+    .side-line{
+        height: 0px;
     }
-    .watchlater:hover{
-        background-color: transparent;
+    .music-button{
+        width: 0px;
+        padding: 0px;
     }
-    
 }
 
 .video-card{
