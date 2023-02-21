@@ -165,7 +165,6 @@
     right:0;
     overflow:scroll;
     white-space:nowrap;
-    cursor:cell
 }
 .horizontal-scroll p{
     margin: 3px 5px 0px 5px;
