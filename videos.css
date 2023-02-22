@@ -576,7 +576,7 @@
 
 
 .video-title{
-    color: white;
+    color:white;
     font-family:Roboto;
     font-size:16px ;
     margin: 0px;
@@ -585,7 +585,7 @@
 
 
 .channel-name{
-    color: white;
+    color:rgb(145,145,145);
     font-family:Arial,Roboto;
     font-size: 12px;
     margin: 8px 0px 4px 0px;
@@ -594,7 +594,7 @@
 
 
 .video-views{
-    color: white;
+    color:rgb(145,145,145);
     font-family:Arial,Roboto;
     font-size: 12px;
     margin:0px;
